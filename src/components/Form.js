@@ -1,4 +1,5 @@
 import React from "react";
+
 const Form = props =>(
   <form onSubmit={props.getWeather} className="form-inline">
     <div className="input-group">

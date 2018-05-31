@@ -1,5 +1,38 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
   font-family: sans-serif;
+  height: 100%;
+  width:100%;
+  margin:0;
+  background: blue;
+}
+.alert{
+  width: 710px;
+  height:auto;
+  margin-top:50px;
+}
+.app{
+  width:50%;
+  height:100%;
+  margin:0px auto;
+  padding:30px;
+  box-shadow: 0px 0px 40px #888888;
+}
+.titles{
+  width:50%;
+  margin:0px auto;
+}
+
+.titles p{
+  text-align: center;
+}
+.weather{
+  box-shadow:0px 0px 20px #888888;
+}
+.weather h4{
+  text-align: center;
+}
+.weather__val{
+  font-weight: bold;
+
 }
