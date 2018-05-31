@@ -1,5 +1,7 @@
 <b>Weather-App<b><br/>
 A simple weather application that fetches current weather of the city.<br/>
+Link to the App https://blooming-savannah-74648.herokuapp.com/  <br/>
+Hosted on Heroku <br/>
 <b>API<b><br/>
 https://openweathermap.org/api <br/>
 
