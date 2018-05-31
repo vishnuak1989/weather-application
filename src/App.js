@@ -18,9 +18,16 @@ class App extends React.Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
+    let data="";
     if(city && country){
-      const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}&units=metric`);
-      const data = await api_call.json();
+      const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}&units=metric`);
+      try {
+        data = await api_call.json();
+      } catch (e) {
+        this.setState({error:"Failed to fetch weather"})
+        alert("failed to fetch weather");
+      }
+      
       if(data.main)
       {
     this.setState({
