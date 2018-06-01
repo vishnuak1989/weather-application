@@ -58,12 +58,24 @@ class App extends React.Component {
 
 
           }
+          reset = (e)=>(e.target.reset());
+          closeAlert=(e)=>(
+            this.setState({
+              temperature:undefined,
+              city:undefined,
+              country:undefined,
+              humidity:undefined,
+              description:undefined,
+              error: ""
+            })
+          );
+          
   render(){
     return(
       <div className="app">
       <Titles />
-      <Form getWeather={this.getWeather} />
-      <Weather
+      <Form getWeather={this.getWeather} reset={this.reset} />
+      <Weather closeAlert={this.closeAlert}
       temperature={this.state.temperature}
       city={this.state.city}
       country={this.state.country}
