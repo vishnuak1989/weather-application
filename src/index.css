@@ -1,8 +1,9 @@
 body {
   margin: auto;
+  
   font-family: sans-serif;
-  height: 100%;
-  width:100%;
+  height: auto;
+  width:auto;
   margin:0;
   background: blue;
 }
@@ -13,26 +14,56 @@ body {
 }
 .app{
   width:50%;
-  height:100%;
+  height:auto;
   margin:0px auto;
   padding:30px;
   box-shadow: 0px 0px 40px #888888;
 }
-.titles{
-  width:50%;
-  margin:0px auto;
+.titles h1{
+  text-align:center;
+  height: auto;
+  width:auto;
 }
-
 .titles p{
   text-align: center;
 }
 .weather{
   box-shadow:0px 0px 20px #888888;
 }
-.weather h4{
-  text-align: center;
-}
+
 .weather__val{
   font-weight: bold;
+}
 
+
+
+@media (max-width: 960px) {
+  .app {
+      width:auto;
+  }
+ 
+  .formComponent{
+    width:50%;
+    height: auto;
+  }
+  .input-group{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;  
+  }
+  .forminput{
+    flex-grow:1 100%;
+  }
+
+  
+}
+
+@media (min-width:961px){
+ 
+  .titles{
+    width:50%;
+    height:auto;
+    margin:auto;
+  }
 }

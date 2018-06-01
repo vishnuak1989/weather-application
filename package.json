@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://blooming-savannah-74648.herokuapp.com/",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.2.0",
